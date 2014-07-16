@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.aylien.text" version="0.0.9" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>Aylien</name>
+	<description>Aylien Text Analysis API</description>
+
+	<preference name="CLIENT_ID" />
+
+	<js-module name="aylien" src="www/aylien.js">
+		<clobbers target="aylien" />
+	</js-module>
+
+	<engines>
+    	<!-- Requires > 3.3.* because of the custom Framework tag for iOS [CB-5238] -->
+    	<engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="Aylien">
+				<param name="ios-package" value="CDVAylien" />
+			</feature>
+		</config-file>
+
+		<header-file src="src/ios/CDVAylien.h" />
+		<source-file src="src/ios/CDVAylien.m" />
+
+        <config-file target="*-Info.plist" parent="AylienClientID">
+            <string>$CLIENT_ID</string>
+        </config-file>
+
+	</platform>
+
+</plugin>
