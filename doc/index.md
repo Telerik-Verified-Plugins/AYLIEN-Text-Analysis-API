@@ -17,7 +17,7 @@
     under the License.
 -->
 
-# org.aylien.text
+# com.aylien.text
 
 The plugin exracts real insight for a given text. This includes hashtags, sentiments and summerization.
 
