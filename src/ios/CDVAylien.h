@@ -2,6 +2,8 @@
 
 #define  BASE_URL @"https://aylien-text.p.mashape.com/"
 
-@interface CDVAylien : CDVPlugin 
-- (void)extract:(CDVInvokedUrlCommand*)command;
+@interface CDVAylien : CDVPlugin
+- (void)summarize:(CDVInvokedUrlCommand*)command;
+- (void)hashtags:(CDVInvokedUrlCommand*)command;
+
 @end

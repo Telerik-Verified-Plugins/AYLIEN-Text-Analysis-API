@@ -3,7 +3,7 @@
 	<name>Aylien</name>
 	<description>Aylien Text Analysis API</description>
 
-	<preference name="CLIENT_ID" />
+	<preference name="API_KEY" />
 
 	<js-module name="aylien" src="www/aylien.js">
 		<clobbers target="aylien" />
@@ -25,7 +25,7 @@
 		<source-file src="src/ios/CDVAylien.m" />
 
         <config-file target="*-Info.plist" parent="AylienClientID">
-            <string>$CLIENT_ID</string>
+            <string>$API_KEY</string>
         </config-file>
 
 	</platform>

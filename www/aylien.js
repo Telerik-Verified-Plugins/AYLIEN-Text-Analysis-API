@@ -1,7 +1,7 @@
 var exec = require('cordova/exec');
 var channel = require('cordova/channel');
 
-// channel.waitForInitialization('onCordovaInfoReady');
+//channel.waitForInitialization('onCordovaInfoReady');
 
 function Aylien(){
 	var me = this;
@@ -13,8 +13,12 @@ function Aylien(){
 	// })
 }
 
-Aylien.prototype.extract = function(arg, successCallback){
-    exec(successCallback,null, "Aylien", "extract", [encodeURIComponent(arg)]);
+Aylien.prototype.summarize = function(arg, successCallback){
+    exec(successCallback,null, "Aylien", "summarize", [encodeURIComponent(arg)]);
+}
+
+Aylien.prototype.hashtags = function(arg, successCallback){
+    exec(successCallback,null, "Aylien", "hashtags", [encodeURIComponent(arg)]);
 }
 
 module.exports = new Aylien();

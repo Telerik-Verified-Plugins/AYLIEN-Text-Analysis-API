@@ -36,10 +36,32 @@ Although the object is in the global scope, it is not available until after the 
 
 ## Methods
 
-- aylien.summerize
+- aylien.summarize
 - aylien.hashtags
 
 
-# aylien.summerize
+# aylien.summarize
 
-//TODO:
+Summarization is used to extract a small number of key sentences from a long article.
+
+## Example
+
+  aylien.summarize("http://www.bbc.com/sport/0/football/25912393", function(result){
+      alert("Sentences:" + result.sentences);
+  });
+
+
+# aylien.hashtags
+
+Using our automatic hashtag suggestion system, you can get a list of highly-relevant hashtags that will help you get more exposure for your content on Social Media.
+
+## Example
+
+  aylien.hashtags("http://www.bbc.com/sport/0/football/25912393", function(result){
+      alert("Hash:" + result.hashtags);
+  });
+
+
+# Supported Platforms
+
+- iOS
