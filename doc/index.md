@@ -46,9 +46,9 @@ Summarization is used to extract a small number of key sentences from a long art
 
 ## Example
 
-  aylien.summarize("http://www.bbc.com/sport/0/football/25912393", function(result){
-      alert("Sentences:" + result.sentences);
-  });
+    aylien.summarize("http://www.bbc.com/sport/0/football/25912393", function(result){
+        alert("Sentences:" + result.sentences);
+    });
 
 
 # aylien.hashtags
@@ -57,10 +57,9 @@ Using our automatic hashtag suggestion system, you can get a list of highly-rele
 
 ## Example
 
-  aylien.hashtags("http://www.bbc.com/sport/0/football/25912393", function(result){
-      alert("Hash:" + result.hashtags);
-  });
-
+    aylien.hashtags("http://www.bbc.com/sport/0/football/25912393", function(result){
+        alert("Hash:" + result.hashtags);
+    });
 
 # Supported Platforms
 
