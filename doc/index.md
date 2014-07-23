@@ -61,6 +61,6 @@ Using our automatic hashtag suggestion system, you can get a list of highly-rele
         alert("Hash:" + result.hashtags);
     });
 
-# Supported Platforms
+## Supported Platforms
 
 - iOS
