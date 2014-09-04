@@ -69,9 +69,9 @@ Extracting sentiment from a piece of text such as a tweet, a review or an articl
 
 ##Example
 
-  aylien.sentiment("http://www.bbc.com/sport/0/football/25912393", function(result){
-      alert("Hash:" + result.subjectivity_confidence);
-  });
+    aylien.sentiment("http://www.bbc.com/sport/0/football/25912393", function(result){
+        alert("Hash:" + result.subjectivity_confidence);
+    });
 
 ## Supported Platforms
 
