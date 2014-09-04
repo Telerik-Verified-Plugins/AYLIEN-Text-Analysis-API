@@ -19,9 +19,9 @@
 
 # com.aylien.text
 
-The plugin exracts real insight for a given text. This includes hashtags, sentiments and summerization.
+This plugin exracts structured information and insights from text. Based on [AYLIEN Text Analysis API](http://aylien.com/text-api), it performs Summarization and Hashtag Suggestion for any piece of text (more features to be added soon).
 
-This plugin defines a global `aylien` object, which defines various operations that are used for data extraction.
+The plugin defines a global `aylien` object, which defines various operations that are used for data extraction.
 
 Although the object is in the global scope, it is not available until after the `deviceready` event.
 
@@ -32,7 +32,9 @@ Although the object is in the global scope, it is not available until after the 
 
 ## Installation
 
-    cordova plugin add com.aylien.text
+You need a Text Analysis API key for using this plugin, which you can obtain by subscribing to the API on [Mashape](https://www.mashape.com/aylien/text-analysis). Once you have your API key, you can install the plugin as below:
+
+    cordova plugin add url —variable API_KEY="YOUR_API_KEY"
 
 ## Methods
 
@@ -42,7 +44,7 @@ Although the object is in the global scope, it is not available until after the 
 
 # aylien.summarize
 
-Summarization is used to extract a small number of key sentences from a long article.
+Summarization is used to summarize long articles by extracting a small number of key sentences.
 
 ## Example
 
@@ -74,3 +76,7 @@ Extracting sentiment from a piece of text such as a tweet, a review or an articl
 ## Supported Platforms
 
 - iOS
+
+## Resources
+
+For more information, please refer to the [Text Analysis API documentation](http://aylien.com/text-api-doc) on AYLIEN.
