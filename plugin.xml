@@ -10,7 +10,6 @@
 	</js-module>
 
 	<engines>
-    	<!-- Requires > 3.3.* because of the custom Framework tag for iOS [CB-5238] -->
     	<engine name="cordova" version=">=3.0.0" />
     </engines>
 
