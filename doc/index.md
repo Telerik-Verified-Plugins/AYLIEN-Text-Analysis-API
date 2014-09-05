@@ -63,6 +63,16 @@ Using our automatic hashtag suggestion system, you can get a list of highly-rele
         alert("Hash:" + result.hashtags);
     });
 
+#aylien.sentiment
+
+Extracting sentiment from a piece of text such as a tweet, a review or an article can give us valuable insights about the intentions and emotions of the person writing it: whether its tone is positive or negative, whether it’s subjective, meaning the author is expressing their own point of view or it’s objective, meaning it’s reflecting an absolute and factual point.
+
+##Example
+
+    aylien.sentiment("http://www.bbc.com/sport/0/football/25912393", function(result){
+        alert("Hash:" + result.subjectivity_confidence);
+    });
+
 ## Supported Platforms
 
 - iOS

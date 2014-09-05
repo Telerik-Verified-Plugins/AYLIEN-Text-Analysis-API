@@ -14,6 +14,11 @@
     [self processCommand:command];
 }
 
+- (void)sentiment:(CDVInvokedUrlCommand *)command
+{
+    [self processCommand:command];
+}
+
 - (void)processCommand:(CDVInvokedUrlCommand*)command{
 
     __block CDVPluginResult* pluginResult = nil;
