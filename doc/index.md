@@ -76,6 +76,7 @@ Extracting sentiment from a piece of text such as a tweet, a review or an articl
 ## Supported Platforms
 
 - iOS
+- Android
 
 ## Resources
 
