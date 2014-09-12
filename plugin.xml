@@ -29,4 +29,24 @@
 
 	</platform>
 
+
+	<platform name="android">
+
+		<source-file src="src/android/res/values/aylien.xml" target-dir="res/values" />
+
+        <config-file target="res/values/aylien.xml" parent="/*">
+            <string name="api_key">$API_KEY</string>
+        </config-file>
+
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="Aylien">
+           		<param name="android-package" value="com.telerik.aylien.AylienPlugin"/>
+         	</feature>
+     	</config-file>
+
+     	<source-file src="src/android/AylienPlugin.java"  target-dir="src/com/telerik/aylien" />
+
+	</platform>
+
+
 </plugin>
